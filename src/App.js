@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import the library
 import { library } from '@fortawesome/fontawesome-svg-core'
-
+import logo from './assets/img/logo.svg'
 // import your icons
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -18,7 +18,7 @@ function App() {
 <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div class="container">
     <div className='d-flex justify-content-between w-100'>
-    <Link class="navbar-brand">Sridhar | Frontend Developer</Link>
+    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | Frontend Developer</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,14 +44,16 @@ function App() {
     <footer>
     <div className="container">
       <div className='row'>
-        <div className='col-lg-4 col-12 text-start'>© 2024</div>
+        <div className='col-lg-4 col-12 text-start'>© 2024 Copyrights Reserved.</div>
         <div className='col-lg-4 col-12 text-center'>
-          <ul className='list-unstyled'>
-            <li className=''><FontAwesomeIcon icon="fa-solid fa-arrow-right" /></li>
+          <ul className='list-unstyled d-flex justify-content-center text-center'>
+            <li className='mx-2'><FontAwesomeIcon icon="fa-brands fa-facebook" /></li>
+            <li className='mx-2'><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></li>
+            <li className='mx-2'><FontAwesomeIcon icon="fa-brands fa-github" /></li>
           </ul>
         </div>
         <div className='col-lg-4 col-12 text-end'>
-          email
+          <code>[kndlsridhar@gmail.com]</code>
         </div>
       </div>
       </div>

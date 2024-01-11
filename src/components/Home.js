@@ -1,10 +1,12 @@
 import React from 'react';
-import disney from '../assets/img/disney-redesign.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SimpleSlider from './SimpleSlider'
 function Home() {
   return (
     <>
     <section className='home'>
-        <h4 className='fw-light text-light'>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2018. At night, I'm building <button className='btn btn-outline-light'><code>Hi !</code></button></h4>
+        <h4 className='fw-light text-light my-5'>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2013. At night, I'm building <button className='btn btn-outline-light'>My Own Portfolio !</button></h4>
 
 
         <div className='container-fluid px-0'>
@@ -13,13 +15,10 @@ function Home() {
                     <div className='card'>
                         <div className='card-body'>
                         <h5>Work</h5>
-                        <ul className='list-unstyled work-list'>
-                            <li>
-                            <h6>Disney + Hostar</h6>
-                               <p>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2018.</p>
-                                <img src={disney} className='img-fluid' alt=''/>
-                            </li>
-                        </ul>
+
+                        <SimpleSlider />
+
+                        
                         <button className='btn btn-primary'>Read more</button>
                         </div>
                     </div>
@@ -48,9 +47,20 @@ function Home() {
                               </div>
                               <div className='col-lg-12 col-12'>
                                   <div className='card'>
-                                      <div className='card-body'>
-                                        <h5>Collections</h5>
+                                      <div className='card-body d-flex justify-content-between'>
+                                        <div className=''>
+                                        <h5>Technical</h5>
                                         <p>What I've collected</p>
+                                        </div>
+
+                                        <ul className='collection list-unstyle'>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-html5" /><span>HTML5</span></li>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-css3-alt" /><span>CSS3</span></li>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-bootstrap" /><span>Bootstrap</span></li>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-angular" /><span>Angular</span></li>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-react" /><span>React</span></li>
+                                            <li><FontAwesomeIcon className="icon" icon="fa-brands fa-figma" /><span>Figma</span></li>
+                                        </ul>
                                       </div>
                                   </div>
                               </div>
@@ -68,9 +78,9 @@ function Home() {
                                                   <h3>Code Tree</h3>
                                                   <p>UI/UX Developer</p>
 
-                                                  <div className='experience-card'>
-                                                      <h1>5.3</h1>
-                                                      <p>years</p>
+                                                  <div className='experience-card align-items-center'>
+                                                      <h1 className='mb-0'>5.5</h1>
+                                                      <p>years<br/>(present)</p>
                                                   </div>
                                               </div>
                                           </div>
@@ -84,7 +94,7 @@ function Home() {
                                                   <p>Web Designer</p>
 
                                                   <div className='experience-card'>
-                                                      <h1>5.3</h1>
+                                                      <h1 className='mb-0'>5.3</h1>
                                                       <p>years</p>
                                                   </div>
                                               </div>

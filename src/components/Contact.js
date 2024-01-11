@@ -19,7 +19,7 @@ function Contact() {
                         <h2>Hire me for your next web project.</h2>
                         <p>People say that I'm able to adapt to various styles, work fast, and always think through possible better experiences that challenge the norm. If you're looking for an experienced designer and Webflow developer that can also work fast I'm your guy.
                         </p>
-                        <p>Fill out the form below or shoot me an email at derekj@hey.com</p>
+                        <p>Fill out the form below or shoot me an email at </p>
                         </div>
                     </div>
                 </div>

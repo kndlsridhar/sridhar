@@ -18,7 +18,7 @@ function App() {
 <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div class="container">
     <div className='d-flex justify-content-between w-100'>
-    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | Frontend Developer</Link>
+    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | UI Developer</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

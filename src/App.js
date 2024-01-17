@@ -18,16 +18,16 @@ function App() {
 <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div class="container">
     <div className='d-flex justify-content-between w-100'>
-    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | UI Developer</Link>
+    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | <span class="designation">UI Developer</span></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <Link class="nav-link active" aria-current="page"  to="/">Home</Link>
-        <Link class="nav-link"  to="profile">Profile</Link>
-        <Link class="nav-link"  to="contact">Contact</Link>
-        <Link class="nav-link disabled" aria-disabled="true">Disabled</Link>
+        <Link class="nav-link active" aria-current="page"activeStyle   to="/">Home</Link>
+        <Link class="nav-link" activeStyle  to="profile">Profile</Link>
+        <Link class="nav-link" activeStyle  to="contact">Contact</Link>
+        <Link class="nav-link disabled" activeStyle aria-disabled="true">Disabled</Link>
       </div>
     </div>
     </div>

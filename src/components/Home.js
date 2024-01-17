@@ -14,6 +14,7 @@ function Home() {
                 <div className='col-lg-4 col-12 left'>
                     <div className='card'>
                         <div className='card-body'>
+                        <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                         <h5>Work</h5>
 
                         <SimpleSlider />

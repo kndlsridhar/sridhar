@@ -7,8 +7,8 @@ function Contact() {
                 <div className='col-lg-4 col-12'>
                     <div className='card'>
                         <div className='card-body'>
-                            <h5>Sr Web Designer + Founder</h5>
-                            <p>I'm Derek J and I've been designing websites since 2018 and at night, I'm building a Bible study app. I'm available to hire for your next project or to provide feedback on your design work.</p>
+                            <h5>Sr UI Developer + UX</h5>
+                            <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
                         </div>
                     </div>
                 </div>
@@ -16,9 +16,32 @@ function Contact() {
                 <div className='col-lg-8 col-12'>
                     <div className='card'>
                         <div className='card-body'>
-                        <h2>Hire me for your next web project.</h2>
-                        <p>People say that I'm able to adapt to various styles, work fast, and always think through possible better experiences that challenge the norm. If you're looking for an experienced designer and Webflow developer that can also work fast I'm your guy.
-                        </p>
+                        <h2>Contact</h2>
+                        
+                        <div className='row'>
+                            <div className='col-lg-12 col-12'>
+                                      <form>
+                                          <div class="form-floating mb-3">
+                                              <input type="password" class="form-control" id="floatingName" placeholder="Name" />
+                                              <label for="floatingName">Name</label>
+                                          </div>
+                                          <div class="form-floating mb-3">
+                                              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                                              <label for="floatingInput">Email</label>
+                                          </div>
+                                          <div class="form-floating mb-3">
+                                              <input type="password" class="form-control" id="floatingMobile" placeholder="Mobile" />
+                                              <label for="floatingMobile">Mobile</label>
+                                          </div>
+                                          <div class="form-floating mb-3">
+  <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"></textarea>
+  <label for="floatingTextarea2">Message</label>
+</div>
+
+<button className='btn btn-primary'>Submit</button>
+                                      </form>
+                            </div>
+                        </div>
                         <p>Fill out the form below or shoot me an email at </p>
                         </div>
                     </div>

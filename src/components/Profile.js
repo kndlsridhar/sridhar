@@ -7,8 +7,8 @@ function Profile() {
                 <div className='col-lg-4 col-12'>
                     <div className='card'>
                         <div className='card-body'>
-                            <h5>Sr Web Designer + Founder</h5>
-                            <p>I'm Derek J and I've been designing websites since 2018 and at night, I'm building a Bible study app. I'm available to hire for your next project or to provide feedback on your design work.</p>
+                            <h5>Sr UI Developer + UX</h5>
+                            <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
                         </div>
                     </div>
                 </div>
@@ -16,11 +16,35 @@ function Profile() {
                 <div className='col-lg-8 col-12'>
                     <div className='card'>
                         <div className='card-body'>
-                        <h2>I tell my family that I make rectangles for a living.</h2>
-<p>People say that I'm able to adapt to various styles, work fast, and always think through possible better experiences that challenge the norm. At the end of the day, I like the color orange and try to stay minimal for my own sake while also being playful.</p>
 
-<p>Here's my design journey...</p>
-                        </div>
+                              <h2>UI Developer</h2>
+                              <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
+
+                              <h2>Experience</h2>
+                              <p>With over 10.8 years of experience in frontend development, I've had the privilege of contributing my skills to Code Tree and Creators Touch, where I honed my abilities in creating modern and responsive user interfaces.</p>
+
+                              <h2>Skills</h2>
+                              <p>My technical toolkit includes expertise in:</p>
+                              <ul>
+                                  <li>HTML5, CSS3, JavaScript, Bootstrap</li>
+                                  <li>React.js, Angular</li>
+                                  <li>Responsive Design, Cross-Browser Compatibility</li>
+                                  <li>Version Control (Git), Build Tools (Webpack)</li></ul>
+                              <h2>Projects</h2>
+                              <p>I've had the privilege of working on exciting projects like:</p>
+
+                              <ul>
+                                  <li>[Project 1 Name]: Describe your role and the impact of the project.</li>
+                                  <li>[Project 2 Name]: Briefly mention the technologies used and your contributions.</li>
+                              </ul>
+                              <h2>Passion and Approach</h2>
+                              <p>I'm deeply passionate about creating web interfaces that not only look great but also provide a seamless and enjoyable user experience. I stay current with the latest design trends and technologies, ensuring that my work is always at the forefront of the industry.</p>
+
+                              <h2>Contact Information</h2>
+                              <p>If you're interested in collaborating or have any questions, feel free to reach out. Connect with me on LinkedIn or explore my GitHub for a closer look at my projects.</p>
+
+
+                          </div>
                     </div>
                 </div>
             </div>

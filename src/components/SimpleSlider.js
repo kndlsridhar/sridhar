@@ -38,6 +38,12 @@ const SimpleSlider = () => {
                                <p>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2018.</p>
                                 <img src={disney} className='img-fluid' alt=''/>
                             </li>
+
+<li>
+<h6>Giripragati</h6>
+   <p>Tribal welfare department of andhra pradesh</p>
+    <img src={disney} className='img-fluid' alt=''/>
+</li>
                             
       </Slider>
                         </ul>

@@ -29,6 +29,7 @@ function Home() {
                               <div className='col-lg-6 col-12 mb-3'>
                                   <div className='card'>
                                       <div className='card-body'>
+                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                         <h5>Notes</h5>
                                         <p>1. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
                                         <p>2. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
@@ -40,6 +41,7 @@ function Home() {
                               <div className='col-lg-6 col-12 mb-3'>
                                   <div className='card'>
                                       <div className='card-body'>
+                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                           <h5>About Me</h5>
                                           <p>My name is Sridhar Khandavalli, and I am writing this cover letter as a part of my application for the Senior UI/UX Designer job within BrainTrust. in US. I believe that my previous experience paired with well-developed field knowledge makes me an ideal fit for the position. Furthermore, I am confident that I would be a valuable addition to not only your team but the whole company.</p>
                                           <button className='btn btn-primary'>Read more</button>
@@ -49,6 +51,7 @@ function Home() {
                               <div className='col-lg-12 col-12'>
                                   <div className='card'>
                                       <div className='card-body d-flex justify-content-between'>
+                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                         <div className=''>
                                         <h5>Technical</h5>
                                         <p>What I've collected</p>
@@ -70,6 +73,7 @@ function Home() {
                 <div className='col-lg-12 col-12 bottom'>
                     <div className='card'>
                         <div className='card-body'>
+                        <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                         <h5>My Experiences</h5>
 
                         <div className='row experience'>

@@ -46,7 +46,7 @@ main{
     justify-content: flex-start;
     display: flex;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 0.5rem;
 }
 .card:hover {

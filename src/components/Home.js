@@ -3,6 +3,21 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SimpleSlider from './SimpleSlider'
 function Home() {
+
+    const syncPointer = ({ x, y }) => {
+        document.documentElement.style.setProperty('--x', x.toFixed(2))
+        document.documentElement.style.setProperty(
+          '--xp',
+          (x / window.innerWidth).toFixed(2)
+        )
+        document.documentElement.style.setProperty('--y', y.toFixed(2))
+        document.documentElement.style.setProperty(
+          '--yp',
+          (y / window.innerHeight).toFixed(2)
+        )
+      }
+      document.body.addEventListener('pointermove', syncPointer)
+
   return (
     <>
     <section className='home'>
@@ -12,7 +27,7 @@ function Home() {
         <div className='container-fluid px-0'>
             <div className='row'>
                 <div className='col-lg-4 col-12 left'>
-                    <div className='card'>
+                    <div className='card' data-glow>
                         <div className='card-body'>
                         <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                         <h5>Work</h5>
@@ -27,7 +42,7 @@ function Home() {
                 <div className='col-lg-8 col-12 text-start right'>
                           <div className='row'>
                               <div className='col-lg-6 col-12 mb-3'>
-                                  <div className='card'>
+                                  <div className='card' data-glow>
                                       <div className='card-body'>
                                       <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                         <h5>Notes</h5>
@@ -39,7 +54,7 @@ function Home() {
                                   </div>
                               </div>
                               <div className='col-lg-6 col-12 mb-3'>
-                                  <div className='card'>
+                                  <div className='card' data-glow>
                                       <div className='card-body'>
                                       <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                           <h5>About Me</h5>
@@ -49,7 +64,7 @@ function Home() {
                                   </div>
                               </div>
                               <div className='col-lg-12 col-12'>
-                                  <div className='card'>
+                                  <div className='card' data-glow>
                                       <div className='card-body d-flex justify-content-between'>
                                       <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                         <div className=''>
@@ -71,7 +86,7 @@ function Home() {
                           </div>
                       </div>
                 <div className='col-lg-12 col-12 bottom'>
-                    <div className='card'>
+                    <div className='card' data-glow>
                         <div className='card-body'>
                         <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                         <h5>My Experiences</h5>

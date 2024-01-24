@@ -2,12 +2,6 @@ import React from 'react'
 function Contact() {
   return (
     <section>
-        <div className='parent'>
-            <div className='child'>1</div>
-            <div className='child'>2</div>
-            <div className='child'>3</div>
-            <div className='child'>4</div>
-        </div>
         <div className='container-fluid px-0'>
             <div className='row'>
                 <div className='col-lg-4 col-12'>

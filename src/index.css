@@ -379,3 +379,18 @@ footer{
   white-space: pre;
   margin: auto;
 }
+
+@media screen and (max-width:475px) {
+  .navbar-collapse {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(1px);
+    left: 0;
+    right: 0;
+    margin-top: 90px;
+    padding: 5px 30px;
+}
+}

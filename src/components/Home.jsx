@@ -63,7 +63,7 @@ function Home() {
                                           <p>My name is Sridhar Khandavalli, and I am writing this cover letter as a part of my application for the Senior UI/UX Designer job within BrainTrust. in US. I believe that my previous experience paired with well-developed field knowledge makes me an ideal fit for the position. Furthermore, I am confident that I would be a valuable addition to not only your team but the whole company.</p>
                                           
                                           <div className='d-flex profile'>
-                                            <img src={sridhar} className='img-fluid w-75' alt='sridhar-khandavalli'/>
+                                            <img src={sridhar} className='img-fluid' alt='sridhar-khandavalli'/>
                                             <button className='btn btn-primary'>Read more</button>
                                           </div>
                                       </div>

@@ -367,10 +367,15 @@ footer{
     top: 0;
     width: 100%;
 }
-
+.profile img{
+  width: 75%;
+  border-radius: 0.5rem;
+}
 .profile .btn{
   display: block;
   transform: rotate(-90deg);
   width: 100%;
-  height: auto;
+  height: fit-content;
+  white-space: pre;
+  margin: auto;
 }

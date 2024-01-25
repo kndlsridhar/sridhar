@@ -28,7 +28,7 @@ function App() {
         <Link class="nav-link" activeStyle  to="profile">Profile</Link>
         <Link class="nav-link" activeStyle  to="works">Works</Link>
         <Link class="nav-link" activeStyle  to="contact">Contact</Link>
-        {/* <Link class="nav-link disabled" activeStyle aria-disabled="true">Disabled</Link> */}
+        <Link class="nav-link" activeStyle> <FontAwesomeIcon icon='fa fa-lock'/> Sign In </Link>
       </div>
     </div>
     </div>

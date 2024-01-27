@@ -39,6 +39,9 @@ main{
   font-size: .875rem;
   transition: color .4s;
 }
+.navbar-nav .nav-link{
+  color: var(--cloth);
+}
 
 .card{
   background-color: var(--dusk-20) !important;
@@ -362,7 +365,7 @@ footer{
     left: 0;
     -o-object-fit: cover;
     object-fit: cover;
-    opacity: .1;
+    opacity: .4;
     position: absolute;
     top: 0;
     width: 100%;
@@ -387,10 +390,19 @@ footer{
     position: absolute;
     top: 0;
     background: rgb(0 0 0 / 50%);
-    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     left: 0;
     right: 0;
     margin-top: 90px;
     padding: 5px 30px;
 }
+}
+
+.works .card{
+  
+  background: rgba(0, 0, 0, 0.169) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border:5px solid rgba(255, 255, 255, 0.150) !important;
 }

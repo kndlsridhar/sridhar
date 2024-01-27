@@ -1,4 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import video from '../assets/img/supply-bg.mp4'
+
+const projects = [
+    { id: 1, name: 'Giripragati', category: 'USA',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' },
+    { id: 2, name: 'Chandranna Pelli Kanuka', category: 'Canada',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' },
+    { id: 3, name: 'Giribhumi', category: 'UK',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' }
+  ];
+
 
 function Works(){
     return(
@@ -7,38 +15,37 @@ function Works(){
                 <source src={video} type="video/mp4"/>
                     </video>
 
-        <div className='parent'>
-            <div className='child'>
-                <div className='card'>
-                    <div className='card-body'>
-                        Hello
-                    </div>
-                </div>
+        <div className='row works'>
+
+            <div className='col-xl-12 col-12'>
+                <ul className='list-unstyled d-flex justify-content-center align-items-center'>
+                    <li className='mx-2 text-white'>Web</li>
+                    <li className='mx-2 text-white'>Mobile</li>
+                    <li className='mx-2 text-white'>UX</li>
+                    <li className='mx-2 text-white'>Dashboard</li>
+                </ul>
             </div>
-            <div className='child'>
-                
-                <div className='card'>
-                    <div className='card-body'>
-                        Hello
-                    </div>
-                </div>
-            </div>
-            <div className='child'>
-                
-                <div className='card'>
-                    <div className='card-body'>
-                        Hello
-                    </div>
-                </div>
-            </div>
-            <div className='child'>
-                
-                <div className='card'>
-                    <div className='card-body'>
-                        Hello
-                    </div>
-                </div>
-            </div>
+
+                {projects.map(function (data) {
+                    return (
+                        <div className='col-xl-4 col-12'>
+                            <div className='card'>
+                                <div className="card-header"><h4 className='card-title'>{data.name}</h4></div>
+                                <div className='card-body'>
+                                    <img src={data.img} alt='img' />
+                                    {data.description}
+                                </div>
+                                <div className='card-footer'>
+                                    <FontAwesomeIcon icon="fa-regular fa-user" className='icon' /> {data.category}
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+
+
+
+
         </div>
 
         </>

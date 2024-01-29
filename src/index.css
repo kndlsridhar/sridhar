@@ -383,7 +383,7 @@ footer{
   margin: auto;
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:991.98px) {
   .navbar-collapse {
     display: block;
     width: 100%;

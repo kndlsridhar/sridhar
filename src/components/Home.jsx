@@ -60,7 +60,7 @@ function Home() {
                                       <div className='card-body'>
                                       <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
                                           <h5>About Me</h5>
-                                          <p>My name is Sridhar Khandavalli, and I am writing this cover letter as a part of my application for the Senior UI/UX Designer job within BrainTrust. in US. I believe that my previous experience paired with well-developed field knowledge makes me an ideal fit for the position. Furthermore, I am confident that I would be a valuable addition to not only your team but the whole company.</p>
+                                          <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
                                           
                                           <div className='d-flex profile'>
                                             <img src={sridhar} className='img-fluid' alt='sridhar-khandavalli'/>
@@ -78,7 +78,7 @@ function Home() {
                                         <p>What I've collected</p>
                                         </div>
 
-                                        <ul className='collection list-unstyle'>
+                                        <ul className='collection list-unstyle d-flex'>
                                             <li><FontAwesomeIcon className="icon" icon="fa-brands fa-html5" /><span>HTML5</span></li>
                                             <li><FontAwesomeIcon className="icon" icon="fa-brands fa-css3-alt" /><span>CSS3</span></li>
                                             <li><FontAwesomeIcon className="icon" icon="fa-brands fa-bootstrap" /><span>Bootstrap</span></li>

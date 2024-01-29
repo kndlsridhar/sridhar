@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import video from '../assets/img/supply-bg.mp4'
 
 const projects = [
-    { id: 1, name: 'Giripragati', category: 'USA',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' },
-    { id: 2, name: 'Chandranna Pelli Kanuka', category: 'Canada',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' },
-    { id: 3, name: 'Giribhumi', category: 'UK',img:'assets/img/sridhar-khandavalli.jpg',description:'Test text' }
+    { id: 1, name: 'Giripragati', category: 'USA',img:require('../assets/img/disney-redesign.png'),description:'Test text' },
+    { id: 2, name: 'Chandranna Pelli Kanuka', category: 'Canada',img:require('../assets/img/disney-redesign.png'),description:'Test text' },
+    { id: 3, name: 'Giribhumi', category: 'UK',img:require('../assets/img/disney-redesign.png'),description:'Test text' }
   ];
 
 
@@ -32,7 +32,7 @@ function Works(){
                             <div className='card'>
                                 <div className="card-header"><h4 className='card-title'>{data.name}</h4></div>
                                 <div className='card-body'>
-                                    <img src={data.img} alt='img' />
+                                    <img src={data.img} alt='img' className='img-fluid' />
                                     {data.description}
                                 </div>
                                 <div className='card-footer'>

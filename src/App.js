@@ -29,7 +29,7 @@ function App() {
         <Link class="nav-link" activeStyle  to="profile">Profile</Link>
         <Link class="nav-link" activeStyle  to="works">Works</Link>
         <Link class="nav-link" activeStyle  to="contact">Contact</Link>
-        <Link class="nav-link" activeStyle> <FontAwesomeIcon icon='fa fa-lock'/> Sign In </Link>
+        <Link class="nav-link" activeStyle to="signin"> <FontAwesomeIcon icon='fa fa-lock'/> Sign In </Link>
       </div>
     </div>
     </div>

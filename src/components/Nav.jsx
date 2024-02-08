@@ -4,6 +4,9 @@ import Profile from "./Profile";
 import Contact from "./Contact";
 import Works from "./Works"
 import Signin from "./Signin";
+import Signup from "./Signup";
+import Dashboard from "./Dashboard";
+
 const Nav = () => {
   return (
     <div>
@@ -13,6 +16,8 @@ const Nav = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/works" element={<Works />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         
       </Routes>
     </div>

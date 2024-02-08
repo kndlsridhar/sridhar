@@ -11,11 +11,27 @@ import logo from './assets/img/logo.svg'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import React, { useRef, useLayoutEffect } from 'react'
 
 function App() {
+
+  const stickyHeader = useRef()
+  useLayoutEffect(() => {
+    const mainHeader = document.getElementById('mainHeader')
+    let fixedTop = stickyHeader.current.offsetTop
+    const fixedHeader = () => {
+      if (window.pageYOffset > fixedTop) {
+        mainHeader.classList.add('sticky-top')
+      } else {
+        mainHeader.classList.remove('sticky-top')
+      }
+    }
+    window.addEventListener('scroll', fixedHeader)
+  }, [])
+
   return (
 <>
-<header>
+<header className="mainHeader" id="mainHeader" ref={stickyHeader}>
 <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div class="container">
     <div className='d-flex justify-content-between w-100'>

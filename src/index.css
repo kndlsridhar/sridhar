@@ -412,3 +412,8 @@ footer{
 .h-100{
   min-height: 600px;
 }
+
+header.sticky-top{
+  background: --backdrop;
+  backdrop-filter: blur(16px);
+}

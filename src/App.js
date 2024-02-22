@@ -12,6 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import React, { useRef, useLayoutEffect } from 'react'
+import Button from '@mui/material/Button';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
         <Link class="nav-link" activeStyle  to="profile">Profile</Link>
         <Link class="nav-link" activeStyle  to="works">Works</Link>
         <Link class="nav-link" activeStyle  to="contact">Contact</Link>
-        <Link class="nav-link" activeStyle to="login"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Link>
+        <Link class="nav-link" activeStyle  to="login"><Button variant="contained"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Button></Link>
       </div>
     </div>
     </div>

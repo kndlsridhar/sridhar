@@ -33,20 +33,20 @@ function App() {
   return (
 <>
 <header className="mainHeader" id="mainHeader" ref={stickyHeader}>
-<nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
-  <div class="container">
+<nav className="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <div className="container">
     <div className='d-flex justify-content-between w-100'>
-    <Link class="navbar-brand"><img src={logo} alt='logo'/> Sridhar | <span class="designation">UI Developer</span></Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <Link className="navbar-brand"><img src={logo} alt='logo'/> Sridhar | <span className="designation">UI Developer</span></Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <Link class="nav-link active" aria-current="page"activeStyle   to="/">Home</Link>
-        <Link class="nav-link" activeStyle  to="profile">Profile</Link>
-        <Link class="nav-link" activeStyle  to="works">Works</Link>
-        <Link class="nav-link" activeStyle  to="contact">Contact</Link>
-        <Link class="nav-link" activeStyle  to="login"><Button variant="contained"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Button></Link>
+    <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
+        <Link className="nav-link active" aria-current="page"   to="/">Home</Link>
+        <Link className="nav-link"  to="profile">Profile</Link>
+        <Link className="nav-link"  to="works">Works</Link>
+        <Link className="nav-link"  to="contact">Contact</Link>
+        <Link className="nav-link"  to="login"><Button variant="contained"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Button></Link>
       </div>
     </div>
     </div>

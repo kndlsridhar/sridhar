@@ -21,20 +21,20 @@ function Contact() {
                         <div className='row'>
                             <div className='col-lg-12 col-12'>
                                       <form>
-                                          <div class="form-floating mb-3">
-                                              <input type="password" class="form-control" id="floatingName" placeholder="Name" />
+                                          <div className="form-floating mb-3">
+                                              <input type="password" className="form-control" id="floatingName" placeholder="Name" />
                                               <label for="floatingName">Name</label>
                                           </div>
-                                          <div class="form-floating mb-3">
-                                              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                                          <div className="form-floating mb-3">
+                                              <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
                                               <label for="floatingInput">Email</label>
                                           </div>
-                                          <div class="form-floating mb-3">
-                                              <input type="password" class="form-control" id="floatingMobile" placeholder="Mobile" />
+                                          <div className="form-floating mb-3">
+                                              <input type="password" className="form-control" id="floatingMobile" placeholder="Mobile" />
                                               <label for="floatingMobile">Mobile</label>
                                           </div>
-                                          <div class="form-floating mb-3">
-  <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"></textarea>
+                                          <div className="form-floating mb-3">
+  <textarea className="form-control" placeholder="Leave a message here" id="floatingTextarea2"></textarea>
   <label for="floatingTextarea2">Message</label>
 </div>
 

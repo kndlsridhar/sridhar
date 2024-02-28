@@ -14,7 +14,7 @@ const projects = [
 function Works(){
     return(
         <>
-        <video class="supply__content-bg" muted="" autoplay="" playsinline="" loop="true" preload="auto">
+        <video className="supply__content-bg" muted="" autoplay="" playsinline="" loop="true" preload="auto">
                 <source src={video} type="video/mp4"/>
                     </video>
 

@@ -31,7 +31,7 @@ function Home() {
                 <div className='col-lg-4 col-12 left'>
                     <div className='card' data-glow>
                         <div className='card-body'>
-                        <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
+                        <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                         <h5>Work</h5>
 
                         <SimpleSlider />
@@ -46,7 +46,7 @@ function Home() {
                               <div className='col-lg-6 col-12 mb-3'>
                                   <div className='card' data-glow>
                                       <div className='card-body'>
-                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
+                                      <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                         <h5>Notes</h5>
                                         <p>1. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
                                         <p>2. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
@@ -58,7 +58,7 @@ function Home() {
                               <div className='col-lg-6 col-12 mb-3'>
                                   <div className='card' data-glow>
                                       <div className='card-body'>
-                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
+                                      <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                           <h5>About Me</h5>
                                           <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
                                           
@@ -72,7 +72,7 @@ function Home() {
                               <div className='col-lg-12 col-12'>
                                   <div className='card' data-glow>
                                       <div className='card-body d-flex justify-content-between'>
-                                      <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
+                                      <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                         <div className=''>
                                         <h5>Technical</h5>
                                         <p>What I've collected</p>
@@ -94,7 +94,7 @@ function Home() {
                 <div className='col-lg-12 col-12 bottom'>
                     <div className='card' data-glow>
                         <div className='card-body'>
-                        <div class="crosshair-wrap cc-top-left"><div class="crosshair-h"></div><div class="crosshair-v"></div></div>
+                        <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                         <h5>My Experiences</h5>
 
                         <div className='row experience'>

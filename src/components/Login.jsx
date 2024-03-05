@@ -1,8 +1,13 @@
 import axios from "axios";
 import React,{ useState } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
+
+  const notify = () => toast("Got Error !");
 
   //const [count,setCount]=useState(0);
 // const increment=()=>{
@@ -41,12 +46,19 @@ const Login = () => {
     
     const token=res.data.token;
     localStorage.setItem('token',token)
-    //window.location.href = '/dashboard';
+    window.location.href = '/dashboard';
 
     }catch(error){
-      setError('error here')
+      notify()
     }
 
+  }
+
+
+  const [condition,setCondition] = useState(false);
+  
+  const clickHandle=()=>{
+    setCondition(!condition);
   }
     return (
       
@@ -55,7 +67,7 @@ const Login = () => {
           <div className="col-4 col-lg-4 col-xl-4">
             <div className="card">
               <div className="card-body">
-                <h4 className="mb-3">Login</h4>
+                <h4 className="mb-3">{condition ? 'Login':'register'} <button onClick={condition ? ()=> alert('Clicked'):clickHandle}>Register</button></h4>
                 <form onSubmit={submitHandler}>
                   <input type="text" name="username" className="form-control mb-3" placeholder="Email" value={username} onChange={changeHandler}/>
                   <input type="password" name="password" className="form-control mb-3" placeholder="Password" value={password} onChange={changeHandler} />
@@ -66,7 +78,7 @@ const Login = () => {
                 </form>
                 
                 {/* <div className="d-flex"><button onClick={decrement}>-</button>{count}<button onClick={increment}>+</button></div> */}
-                  
+                <ToastContainer />
               </div>
             </div>
           </div>

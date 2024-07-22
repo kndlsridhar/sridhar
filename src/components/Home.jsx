@@ -60,6 +60,9 @@ function Home() {
                                       <div className='card-body'>
                                       <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                           <h5>About Me</h5>
+                                          <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
                                           <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
                                           
                                           <div className='d-flex profile'>

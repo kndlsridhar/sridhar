@@ -35,20 +35,27 @@ function App() {
 <header className="mainHeader" id="mainHeader" ref={stickyHeader}>
 <nav className="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div className="container">
-    <div className='d-flex justify-content-between w-100'>
-    <Link className="navbar-brand"><img src={logo} alt='logo'/> Sridhar | <span className="designation">UI Developer</span></Link>
+    <div className='row d-flex justify-content-between w-100'>
+    <div className='col-lg-4 col-12 text-start'><Link className="navbar-brand"><img src={logo} alt='logo'/> Sridhar | <span className="designation">UI Developer</span></Link></div>
+    <div className='col-lg-4 col-12'>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <Link className="nav-link active" aria-current="page"   to="/">Home</Link>
         <Link className="nav-link"  to="profile">Profile</Link>
         <Link className="nav-link"  to="works">Works</Link>
         <Link className="nav-link"  to="contact">Contact</Link>
-        <Link className="nav-link"  to="login"><Button variant="contained"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Button></Link>
+        
       </div>
     </div>
+    </div>
+    <div className='col-lg-4 col-12 text-end'>
+    <Link className="nav-link"  to="login"><Button variant="contained"> <FontAwesomeIcon icon='fa fa-lock'/> Login </Button></Link>
+    </div>
+    
+    
     </div>
   </div>
 </nav>

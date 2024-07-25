@@ -1,5 +1,47 @@
-import React from 'react'
+import React,{useState} from 'react';
+import axios from 'axios';
+
+const API_URL = 'https://sridharportfolio-dd1e5-default-rtdb.firebaseio.com';
+
 function Contact() {
+
+    const [data,setData] = useState({
+        name:'',
+        email:'',
+        mobile:'',
+        message:''
+    });
+
+    const {name,email,mobile,message}=data;
+
+    const handleChange=(e)=>{
+        setData({...data,[e.target.name]:[e.target.value]})
+    }
+
+    const submiHandler = e => {
+        e.preventDefault();
+        //console.log(data);
+        axios.post(`${API_URL}/contact.json`, data).then(
+            () => alert('Success')
+        )
+    }
+
+//const [contact,setContact] = useState([]);
+//   useEffect(() => {
+//     fetch('https://sridharportfolio-dd1e5-default-rtdb.firebaseio.com/contact.json').then(
+//         res => res.json()
+//     ).then(json=> setContact(json))
+//   },[])
+
+
+// const getContact= () =>{
+//     useEffect(async ()=>{
+//         const res = await axios.get('https://sridharportfolio-dd1e5-default-rtdb.firebaseio.com/contact.json').then(()=>{
+//             res = setContact(res)
+//         })
+//     },[])
+// }
+
   return (
     <section>
         <div className='container-fluid px-0'>
@@ -9,6 +51,12 @@ function Contact() {
                         <div className='card-body'>
                             <h5>Sr UI Developer + UX</h5>
                             <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
+
+                            <div>
+                                <ul>
+                                    {/* {contact.map(item => <li key={item.id}>{item.name}</li>)} */}
+                                </ul>
+    </div>
                         </div>
                     </div>
                 </div>
@@ -18,31 +66,33 @@ function Contact() {
                         <div className='card-body'>
                         <h2>Contact</h2>
                         
+                        
                         <div className='row'>
                             <div className='col-lg-12 col-12'>
-                                      <form>
+                                      <form onSubmit={submiHandler}>
                                           <div className="form-floating mb-3">
-                                              <input type="password" className="form-control" id="floatingName" placeholder="Name" />
-                                              <label for="floatingName">Name</label>
+                                              <input type="text" className="form-control" name="name" id="name" value={name} placeholder="Name" onChange={handleChange} />
+                                              <label htmlFor='name'>Name</label>
                                           </div>
                                           <div className="form-floating mb-3">
-                                              <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                                              <label for="floatingInput">Email</label>
+                                              <input type="email" className="form-control" name="email" id="email" value={email} placeholder="name@example.com" onChange={handleChange} />
+                                              <label htmlFor="email">Email</label>
                                           </div>
                                           <div className="form-floating mb-3">
-                                              <input type="password" className="form-control" id="floatingMobile" placeholder="Mobile" />
-                                              <label for="floatingMobile">Mobile</label>
+                                              <input type="text" className="form-control" name="mobile" id="mobile" value={mobile} placeholder="Mobile" onChange={handleChange} />
+                                              <label htmlFor="mobile">Mobile</label>
                                           </div>
                                           <div className="form-floating mb-3">
-  <textarea className="form-control" placeholder="Leave a message here" id="floatingTextarea2"></textarea>
-  <label for="floatingTextarea2">Message</label>
-</div>
-
-<button className='btn btn-primary'>Submit</button>
+                                              <textarea className="form-control" placeholder="Leave a message here" name="message" value={message} id="message" onChange={handleChange}></textarea>
+                                              <label htmlFor="message">Message</label>
+                                          </div>
+                                          <button className='btn btn-primary' type='submit'>Submit</button>
                                       </form>
                             </div>
                         </div>
                         <p>Fill out the form below or shoot me an email at </p>
+
+
                         </div>
                     </div>
                 </div>

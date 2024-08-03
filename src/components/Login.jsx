@@ -15,6 +15,7 @@ const Login = () => {
   const handleSubmit = (e) => {
       e.preventDefault();
 
+    
       // Hardcoded JSON for user credentials
       const users = [
           { username: 'user1', password: 'password1' },
@@ -24,8 +25,10 @@ const Login = () => {
       const user = users.find(user => user.username === username && user.password === password);
 
       if (user) {
-          alert('Login successful!');
+        toast('Login successful!');
+      const { history } = this.props;
           // Perform further actions like redirecting to another page
+          history.push("/dashboard")
       } else {
           setError('');
           notify();

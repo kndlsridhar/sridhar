@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import SimpleSlider from './SimpleSlider';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import SimpleSlider from './SimpleSlider';
 
-import sridhar from '../assets/img/sridhar-khandavalli.jpg';
+// import sridhar from '../assets/img/sridhar-khandavalli.jpg';
 function Home() {
 
     const syncPointer = ({ x, y }) => {
@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <>
-    <section className='home'>
+    {/* <section className='home'>
         <h4 className='fw-light text-light my-5'>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2013. At night, I'm building <button className='btn btn-outline-light'>My Own Portfolio !</button></h4>
 
 
@@ -135,6 +135,12 @@ function Home() {
                 </div>
             </div>
         </div>
+    </section> */}
+
+    <section>
+        <h1 class="col-start-1 text-center row-start-2 mt-4 max-w-[36rem] text-xl font-extrabold tracking-tight text-white sm:text-7xl xl:max-w-[43.5rem]">
+        Upcoming Enhancements for Our Soon-to-Launch Website
+            </h1>
     </section>
     </>
   )

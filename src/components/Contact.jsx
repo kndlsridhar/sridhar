@@ -1,10 +1,15 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const API_URL = 'https://sridharportfolio-dd1e5-default-rtdb.firebaseio.com';
 
+
 function Contact() {
 
+    
+   
     const [data,setData] = useState({
         name:'',
         email:'',
@@ -22,16 +27,33 @@ function Contact() {
         e.preventDefault();
         //console.log(data);
         axios.post(`${API_URL}/contact.json`, data).then(
-            () => alert('Success')
+            () => toast("Wow so easy!")
+
         )
     }
 
-//const [contact,setContact] = useState([]);
-//   useEffect(() => {
-//     fetch('https://sridharportfolio-dd1e5-default-rtdb.firebaseio.com/contact.json').then(
-//         res => res.json()
-//     ).then(json=> setContact(json))
-//   },[])
+
+
+ const [contacts,setContacts] = useState({});
+
+  useEffect(() => {
+    //const url = `${API_URL}/contact.json`;
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${API_URL}/contact.json`);
+        const contacts = await response.json();
+        setContacts(contacts);
+        console.log(contacts);
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
+
+    fetchData();
+}, []);
+
+
 
 
 // const getContact= () =>{
@@ -54,7 +76,25 @@ function Contact() {
 
                             <div>
                                 <ul>
-                                    {/* {contact.map(item => <li key={item.id}>{item.name}</li>)} */}
+                                    
+
+                                <ToastContainer />
+
+<h1>Fetched Data</h1>
+      {contacts.length > 0 ? (
+        <ul>
+          {contacts.map(item => (
+      <li key={item.id}>
+        {JSON.stringify(item)}
+      </li>
+    ))}
+        </ul>
+      ) : (
+        <p>Loading...</p>
+      )}
+
+      
+                                        
                                 </ul>
     </div>
                         </div>

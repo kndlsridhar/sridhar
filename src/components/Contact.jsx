@@ -72,7 +72,7 @@ function Contact() {
                     <div className='card'>
                         <div className='card-body'>
                             <h5>Sr UI Developer + UX</h5>
-                            <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
+                            <p>Hi there! I'm Sridhar, a passionate ui developer dedicated to crafting seamless and visually stunning web experiences.</p>
 
                             <div>
                                 <ul>

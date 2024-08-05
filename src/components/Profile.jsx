@@ -22,10 +22,10 @@ function Profile() {
                         <div className='card-body'>
 
                               <h2>UI Developer</h2>
-                              <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
+                              <p>Hi there! I'm Sridhar, a passionate ui developer dedicated to crafting seamless and visually stunning web experiences.</p>
 
                               <h2>Experience</h2>
-                              <p>With over 10.8 years of experience in frontend development, I've had the privilege of contributing my skills to Code Tree and Creators Touch, where I honed my abilities in creating modern and responsive user interfaces.</p>
+                              <p>With over 10.8 years of experience in ui development, I've had the privilege of contributing my skills to Code Tree and Creators Touch, where I honed my abilities in creating modern and responsive user interfaces.</p>
 
                               <h2>Skills</h2>
                               <p>My technical toolkit includes expertise in:</p>

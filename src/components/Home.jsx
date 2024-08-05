@@ -1,9 +1,9 @@
 import React from 'react';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import SimpleSlider from './SimpleSlider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SimpleSlider from './SimpleSlider';
 
-// import sridhar from '../assets/img/sridhar-khandavalli.jpg';
+import sridhar from '../assets/img/sridhar-khandavalli.jpg';
 function Home() {
 
     const syncPointer = ({ x, y }) => {
@@ -22,8 +22,8 @@ function Home() {
 
   return (
     <>
-    {/* <section className='home'>
-        <h4 className='fw-light text-light my-5'>Designing websites with speed + various style direction for non-profits, small businesses, edutech, and startups since 2013. At night, I'm building <button className='btn btn-outline-light'>My Own Portfolio !</button></h4>
+    <section className='home'>
+        <h4 className='fw-light text-light my-5'>Highly skilled and innovative UI Developer with over 11 years of experience in creating dynamic and intuitive user interfaces for web and mobile applications. Proficient in HTML, CSS, JavaScript, and modern frameworks such as Angular, React.  <button className='btn btn-outline-light'>My Own Portfolio !</button></h4>
 
 
         <div className='container-fluid px-0'>
@@ -48,8 +48,7 @@ function Home() {
                                       <div className='card-body'>
                                       <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                         <h5>Notes</h5>
-                                        <p>1. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
-                                        <p>2. I am confident that I would be a valuable addition to not only your team but the whole company.</p>
+                                        
 
                                         <button className='btn btn-primary'>Read more</button>
                                       </div>
@@ -61,9 +60,9 @@ function Home() {
                                       <div className="crosshair-wrap cc-top-left"><div className="crosshair-h"></div><div className="crosshair-v"></div></div>
                                           <h5>About Me</h5>
                                           <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Hello!
   </h1>
-                                          <p>Hi there! I'm Sridhar, a passionate frontend developer dedicated to crafting seamless and visually stunning web experiences.</p>
+                                          <p>Hi there! I'm Sridhar, a passionate ui developer dedicated to crafting seamless and visually stunning web experiences.</p>
                                           
                                           <div className='d-flex profile'>
                                             <img src={sridhar} className='img-fluid' alt='sridhar-khandavalli'/>
@@ -135,12 +134,6 @@ function Home() {
                 </div>
             </div>
         </div>
-    </section> */}
-
-    <section>
-        <h1 class="col-start-1 text-center row-start-2 mt-4 max-w-[36rem] text-xl font-extrabold tracking-tight text-white sm:text-7xl xl:max-w-[43.5rem]">
-        Upcoming Enhancements for Our Soon-to-Launch Website
-            </h1>
     </section>
     </>
   )
